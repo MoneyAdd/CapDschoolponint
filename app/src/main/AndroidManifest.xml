@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cookandroid.schoolpointfinishedversion">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:node="remove" />
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SchoolPointfinishedversion"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".register.Termspage2"
+            android:exported="false" />
+        <activity
+            android:name=".register.Dirhksehddml"
+            android:exported="false" />
+        <activity
+            android:name=".kakao.KakaoRegister"
+            android:exported="false" />
+        <activity
+            android:name=".register.Studentjoin"
+            android:exported="false" />
+        <activity
+            android:name=".register.Staffjoin"
+            android:exported="false" />
+        <activity
+            android:name=".register.SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".MainPage"
+            android:exported="true" />
+        <activity
+            android:name=".StratView"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LodingView"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".register.Termspage1"
+            android:exported="true"/>
+       <activity android:name=".register.Dirrhksehddml2"
+           android:exported="true">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth" -->
+                <data
+                    android:host="oauth"
+                    android:scheme="821d23ad7db1b748fd5a42fbd44a2c6d" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

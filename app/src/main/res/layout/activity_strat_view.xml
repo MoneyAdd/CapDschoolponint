@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F7EDE3"
+    tools:context=".StratView">
+
+
+    <ImageView
+        android:layout_width="234dp"
+        android:layout_height="232dp"
+        android:layout_marginTop="226dp"
+        android:layout_marginLeft="112dp"
+        android:src="@drawable/rogo"/>
+
+
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="54dp"
+        android:background="@drawable/startroginbtn"
+        android:id="@+id/start_rogin_btn"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:text="회원가입"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="54dp"
+        android:background="@drawable/signup"
+        android:id="@+id/start_signup_btn"/>
+
+
+
+
+
+</LinearLayout>

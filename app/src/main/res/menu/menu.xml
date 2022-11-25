@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+   <item
+      android:id="@+id/schedul"
+      android:title=""
+      android:enabled="true"
+      app:showAsAction="always"
+       app:labelVisibilityMode="unlabeled"
+      android:icon="@drawable/schedul"/>
+
+   <item
+       android:id="@+id/runch"
+       android:title=""
+       android:icon="@drawable/runch"
+       app:labelVisibilityMode="unlabeled"
+       android:enabled="true"
+       app:showAsAction="always"/>
+
+   <item
+       android:id="@+id/home"
+       android:title=""
+       app:labelVisibilityMode="unlabeled"
+       android:icon="@drawable/home"
+       android:enabled="true"
+       app:showAsAction="always"/>
+
+   <item
+       android:id="@+id/board"
+       android:title=""
+       app:labelVisibilityMode="unlabeled"
+       android:icon="@drawable/board"
+       android:enabled="true"
+       app:showAsAction="always"/>
+
+   <item
+       android:id="@+id/user"
+       android:title=""
+       app:labelVisibilityMode="unlabeled"
+       android:icon="@drawable/user"
+       android:enabled="true"
+       app:showAsAction="always"/>
+
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Adroidstudio/FinalSchoolPoint-master/FinalSchoolPoint-master/app/src/main/res/drawable-v24/termspagestrock.xml" value="0.21" />
+        <entry key="..\:/Adroidstudio/FinalSchoolPoint-master/FinalSchoolPoint-master/app/src/main/res/layout/activity_agree1.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/FinalSchoolPoint-master/FinalSchoolPoint-master/app/src/main/res/layout/activity_dirhksehddml.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/FinalSchoolPoint-master/FinalSchoolPoint-master/app/src/main/res/layout/activity_dirrhksehddml2.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/FinalSchoolPoint-master/FinalSchoolPoint-master/app/src/main/res/layout/activity_kakao_register.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/FinalSchoolPoint-master/FinalSchoolPoint-master/app/src/main/res/layout/activity_loding_view.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/FinalSchoolPoint-master/FinalSchoolPoint-master/app/src/main/res/layout/activity_main.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/FinalSchoolPoint-master/FinalSchoolPoint-master/app/src/main/res/layout/activity_sign_up.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/FinalSchoolPoint-master/FinalSchoolPoint-master/app/src/main/res/layout/activity_staffjoin.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/FinalSchoolPoint-master/FinalSchoolPoint-master/app/src/main/res/layout/activity_strat_view.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/FinalSchoolPoint-master/FinalSchoolPoint-master/app/src/main/res/layout/activity_studentjoin.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/FinalSchoolPoint-master/FinalSchoolPoint-master/app/src/main/res/layout/activity_termspage1.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/FinalSchoolPoint-master/FinalSchoolPoint-master/app/src/main/res/layout/activity_termspage2.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/drawable/findschoolbtn.xml" value="0.204" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/drawable/google.xml" value="0.205" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/drawable/idpwput.xml" value="0.205" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/drawable/idpwputerr.xml" value="0.2035" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/drawable/kakaoroginbtn.xml" value="0.205" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/drawable/maintitle.xml" value="0.204" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/drawable/notice.xml" value="0.204" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/drawable/roginbtn.xml" value="0.205" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/drawable/roginmidle.xml" value="0.205" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/drawable/signup.xml" value="0.205" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/drawable/startroginbtn.xml" value="0.205" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/drawable/todolist.xml" value="0.204" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/layout/activity_agree.xml" value="0.2638572513287775" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/layout/activity_agree1.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/layout/activity_agree2.xml" value="0.24048442906574394" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/layout/activity_kakao_register.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/layout/activity_loding_view.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/layout/activity_main_page.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/layout/activity_staffjoin.xml" value="0.30798479087452474" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/layout/activity_strat_view.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/layout/activity_studentjoin.xml" value="0.33" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/layout/mainpage.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/menu/bottombar.xml" value="0.3619791666666667" />
+        <entry key="..\:/Adroidstudio/SchoolPointfinishedversion/app/src/main/res/menu/menu.xml" value="0.3619791666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

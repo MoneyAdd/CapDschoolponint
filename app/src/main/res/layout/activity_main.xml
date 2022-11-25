@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5BD60"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="195dp"
+            android:layout_height="61dp"
+            android:text="로그인"
+            android:textSize="50dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="24dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/idpwput"
+                android:hint="아이디를 입력해주세요."
+                />
+
+            <EditText
+                android:id="@+id/edit_pw"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/idpwput"
+                android:paddingHorizontal="20dp"
+                android:hint="비밀번호를 입력해주세요."
+                android:layout_marginHorizontal="20dp"
+                android:paddingVertical="20dp"
+                android:inputType="textPassword"
+                />
+
+
+            <Button
+                android:id="@+id/rogin_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="50dp"
+                android:paddingVertical="20dp"
+                android:background="@drawable/roginbtn"
+                android:text="로그인"
+                android:textColor="#ffffff"
+               />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="OR"
+            android:textSize="25sp"
+            android:layout_marginTop="35dp"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/kakao_btn"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="35dp"
+            android:src="@drawable/kakaologin"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="아이디/비밀번호찾기"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:id="@+id/tv_idpw_find"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="회원가입"
+                android:layout_gravity="center"
+               android:layout_marginStart="170dp"
+                android:textColor="#000000"
+                android:id="@+id/tv_main_register"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

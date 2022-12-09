@@ -18,6 +18,15 @@
         android:theme="@style/Theme.SchoolPointfinishedversion"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".BoardView"
+            android:exported="false" />
+        <activity
+            android:name=".BoardWriting"
+            android:exported="false" />
+        <activity
+            android:name=".BoardPage"
+            android:exported="false" />
+        <activity
             android:name=".register.Termspage2"
             android:exported="false" />
         <activity
@@ -58,11 +67,10 @@
             android:exported="true" />
         <activity
             android:name=".register.Termspage1"
-            android:exported="true"/>
-       <activity android:name=".register.Dirrhksehddml2"
-           android:exported="true">
-
-
+            android:exported="true" />
+        <activity
+            android:name=".register.Dirrhksehddml2"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 

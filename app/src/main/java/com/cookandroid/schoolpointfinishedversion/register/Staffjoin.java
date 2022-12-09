@@ -146,6 +146,7 @@ public class Staffjoin extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<RegisterResponse> call, Throwable t) {
+                Log.d("registererr", String.valueOf(t));
                 AlertDialog.Builder builder = new AlertDialog.Builder(Staffjoin.this);
                 builder.setTitle("알림").setMessage("통신오류").setPositiveButton("확인", null).create().show();
                 AlertDialog alertDialog = builder.create();

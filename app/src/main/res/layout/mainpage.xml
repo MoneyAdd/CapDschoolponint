@@ -321,7 +321,7 @@
             <LinearLayout
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="@drawable/mainpage_todolist"
                 android:orientation="vertical">
 
@@ -359,15 +359,32 @@
                </LinearLayout>
 
                 <LinearLayout
-                    android:layout_marginTop="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                    <ListView
-                        android:id="@+id/lv_mainpage_board"
+                    <TextView
+                        android:id="@+id/tv_mainpage_boardtitle"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10dp"
+                        android:paddingHorizontal="10dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+
+                      />
+
+                    <TextView
+                        android:id="@+id/tv_mainpage_boardtitle1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingVertical="10dp"
+                        android:paddingHorizontal="10dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:text="맛점하세요"
+                       />
+
 
 
                 </LinearLayout>

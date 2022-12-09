@@ -23,6 +23,7 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.cookandroid.schoolpointfinishedversion.api.RoginAPI;
 import com.cookandroid.schoolpointfinishedversion.kakao.KakaoRegister;
+import com.cookandroid.schoolpointfinishedversion.register.SignUp;
 import com.google.gson.Gson;
 import com.kakao.sdk.user.UserApiClient;
 
@@ -85,6 +86,14 @@ public class MainActivity extends AppCompatActivity {
                     //로그인 통신
                     LoginResponse();
                 }
+            }
+        });
+
+        mainregister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SignUp.class);
+                startActivity(intent);
             }
         });
 
@@ -159,11 +168,6 @@ public class MainActivity extends AppCompatActivity {
 //       userID = intents.getExtras().getString("userid").toString();
 //          userPW = intents.getExtras().getString("userpw").toString();
 
-
-
-
-
-
         //loginRequeset에 사용자가 입력한 id와 pw를 저장
           LoginRequest loginRequest = new LoginRequest(ID, PW);
           //retrofit 설정
@@ -197,6 +201,8 @@ public class MainActivity extends AppCompatActivity {
               //통신 실패
               @Override
               public void onFailure(Call<LoginResponse> call, Throwable t) {
+
+                  Log.d("tttt", String.valueOf(t));
 
                  userid.addTextChangedListener(new TextWatcher() {
                      @Override

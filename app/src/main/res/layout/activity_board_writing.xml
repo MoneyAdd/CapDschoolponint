@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BoardWriting">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="게시글 제목"
+        android:textSize="20sp"
+        android:id="@+id/et_board_title"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="게시글 내용"
+        android:textSize="20sp"
+        android:id="@+id/et_board_content"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="게시글 종류"
+        android:textSize="20sp"
+        android:id="@+id/et_board_type"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="유저 아이디"
+        android:textSize="20sp"
+        android:id="@+id/et_board_userid"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="업로드"
+            android:id="@+id/btn_board_upload"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

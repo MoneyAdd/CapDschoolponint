@@ -74,9 +74,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/staff"
-                android:layout_marginLeft="175dp"
-                android:layout_marginTop="33dp"/>
+                android:src="@drawable/pngwing2"
+                android:layout_marginLeft="160dp"
+                />
 
 
 
@@ -125,9 +125,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/student"
-                android:layout_marginLeft="136dp"
-                android:layout_marginTop="25dp"/>
+                android:src="@drawable/pngwing3"
+                android:layout_marginLeft="160dp"
+              />
 
 
 

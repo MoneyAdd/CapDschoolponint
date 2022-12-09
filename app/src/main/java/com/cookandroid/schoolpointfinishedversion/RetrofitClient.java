@@ -13,6 +13,8 @@ public class RetrofitClient {
     private static RoginAPI roginAPI;
     private static RegisterAPI registerAPI;
     private static KakaoApi kakaoApi;
+    private static BoardAPI boardAPI;
+    private static BulletinboardAPI bulletinboardAPI;
     //사용하고 있는 서버 베이스 주소
     private static String baseUrl = "http://120.142.105.189:12321/";
 
@@ -23,6 +25,8 @@ public class RetrofitClient {
         roginAPI = retrofit.create(RoginAPI.class);
         registerAPI = retrofit.create(RegisterAPI.class);
         kakaoApi = retrofit.create(KakaoApi.class);
+       boardAPI = retrofit.create(BoardAPI.class);
+       bulletinboardAPI = retrofit.create(BulletinboardAPI.class);
 
     }
     public static RetrofitClient getInstance(){
@@ -40,5 +44,11 @@ public class RetrofitClient {
     }
    public static KakaoApi getKakaoApi(){
         return kakaoApi;
+   }
+   public static BoardAPI getBoardAPI(){
+        return boardAPI;
+   }
+   public static BulletinboardAPI getBulletinboardAPI(){
+        return bulletinboardAPI;
    }
 }

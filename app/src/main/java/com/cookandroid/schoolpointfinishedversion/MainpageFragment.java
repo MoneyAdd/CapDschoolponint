@@ -1,6 +1,7 @@
 package com.cookandroid.schoolpointfinishedversion;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -22,13 +23,25 @@ public class MainpageFragment extends Fragment {
     View view;
 
 
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
 
+
+
         view = inflater.inflate(R.layout.mainpage, container, false);
         TextView time = view.findViewById(R.id.tv_mainpage_time);
+        TextView plus = view.findViewById(R.id.tv_mainpage_Viewmore);
+       plus.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent = new Intent(v.getContext(), BoardView.class);
+               startActivity(intent);
+           }
+       });
+
         final Handler handler = new Handler(){
             @Override
             public void handleMessage(@NonNull Message msg) {
@@ -48,8 +61,11 @@ public class MainpageFragment extends Fragment {
         };
         Thread thread = new Thread(task);
         thread.start();
+
+
         return view;
     }
+
 
     }
 

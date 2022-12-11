@@ -21,6 +21,7 @@
             android:src="@drawable/back" />
 
         <TextView
+            android:fontFamily="@font/pyeong"
             android:layout_width="65dp"
             android:layout_height="21dp"
             android:layout_marginLeft="140dp"
@@ -44,6 +45,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
+                android:fontFamily="@font/pyeong"
                 android:textStyle="bold"
                 android:layout_width="112dp"
                 android:layout_height="35dp"
@@ -54,12 +56,14 @@
                 android:textColor="#000000"/>
 
             <TextView
+                android:fontFamily="@font/pyeong"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="스쿨포인트에 가입하기 전,"
                 android:textColor="#000000"
                 android:layout_marginLeft="16dp"/>
             <TextView
+                android:fontFamily="@font/pyeong"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="원활한 서비스 이용과 개인정보 보호를 위하여"
@@ -67,6 +71,7 @@
                 android:layout_marginLeft="16dp"/>
 
             <TextView
+                android:fontFamily="@font/pyeong"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="약관의 동의가 필요합니다."
@@ -86,6 +91,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="필수"
@@ -94,6 +100,7 @@
                     android:textStyle="bold"/>
 
                 <TextView
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#000000"
@@ -144,6 +151,7 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
         <Button
+            android:fontFamily="@font/pyeong"
             android:layout_width="0dp"
             android:id="@+id/btn_next"
             android:layout_height="wrap_content"

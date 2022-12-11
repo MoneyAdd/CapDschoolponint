@@ -40,7 +40,7 @@ public class Staffjoin extends AppCompatActivity {
 
     private Button btn_registersave;
 
-    private EditText edt_nickname, edt_userid, edt_password, edt_paswwords;
+    private EditText edt_nickname, edt_userid, edt_password, edt_paswwords, username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +51,7 @@ public class Staffjoin extends AppCompatActivity {
         edt_userid = findViewById(R.id.edt_userid);
         edt_password = findViewById(R.id.edt_userpw);
         edt_paswwords = findViewById(R.id.edt_userpww);
+        username = findViewById(R.id.edt_username);
 
         btn_registersave = findViewById(R.id.registersave);
 
@@ -76,9 +77,9 @@ public class Staffjoin extends AppCompatActivity {
                 String userid = edt_userid.getText().toString();
                 String userpassword = edt_password.getText().toString();
                 String userpasswords = edt_paswwords.getText().toString();
-
+                String USERname = username.getText().toString();
                 if(usernickname.trim().length() == 0 || userid.trim().length() == 0 || userpasswords.trim().length() == 0 || userpassword.trim().length() == 0 ||
-                userid == null || usernickname == null || userpassword == null || userpasswords == null ){
+                userid == null || usernickname == null || userpassword == null || userpasswords == null || USERname.trim().length() == 0 || USERname == null ){
                     AlertDialog.Builder builder = new AlertDialog.Builder(Staffjoin.this);
                     builder.setTitle("알림").setMessage("회원가입 정보를 확인 해주세요").setPositiveButton("확인", null).create().show();
                     AlertDialog alertDialog = builder.create();
@@ -118,9 +119,11 @@ public class Staffjoin extends AppCompatActivity {
         String ID = edt_userid.getText().toString();
         String PW = edt_password.getText().toString();
         String PWS = edt_paswwords.getText().toString();
+        String NAME  = username.getText().toString();
         String NICKNAME = edt_nickname.getText().toString();
+        String EMAIL = "tjdwns0158@naver.com";
 
-        RegisterRequest registerRequest = new RegisterRequest(NICKNAME, ID, PW);
+        RegisterRequest registerRequest = new RegisterRequest(NICKNAME, ID, PW, NAME, EMAIL);
         retrofitClient = RetrofitClient.getInstance();
         registerAPI = RetrofitClient.getRegisterAPI();
         registerAPI.getRegisterResponse(registerRequest).enqueue(new Callback<RegisterResponse>() {
@@ -132,11 +135,8 @@ public class Staffjoin extends AppCompatActivity {
                     //받은 코드 저장
                     Boolean resultcode = result.getSuc();
 
-
                     Toast.makeText(getApplicationContext(), "가입완료!!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(Staffjoin.this, MainActivity.class);
-
-
                     startActivity(intent);
                     Staffjoin.this.finish();
                 }else {

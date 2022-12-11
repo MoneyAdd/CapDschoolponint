@@ -114,7 +114,7 @@ public class Studentjoin extends AppCompatActivity {
                 String username = edt_name.getText().toString();
 
                 if (usernickname.trim().length() == 0 || usernickname == null || userid.trim().length() == 0 || userid == null || userpassword.trim().length() == 0 || userpassword == null ||
-                        userpasswords.trim().length() == 0 || userpasswords == null || username.trim().length() == 0 || username == null) {
+                        userpasswords.trim().length() == 0 || userpasswords == null|| username.trim().length() == 0 || username == null) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(Studentjoin.this);
                     builder.setTitle("알림").setMessage("계정 정보를 다시 확인 바랍니다.").setPositiveButton("확인", null).create().show();
                     AlertDialog alertDialog = builder.create();
@@ -132,8 +132,10 @@ public class Studentjoin extends AppCompatActivity {
         String PW = edt_password.getText().toString();
         String PWS = edt_paswwords.getText().toString();
         String NICKNAME = edt_nickname.getText().toString();
+        String Name = edt_name.getText().toString();
+        String EMAIL = "tjdwns0158@gogle.com";
 
-        RegisterRequest registerRequest = new RegisterRequest(NICKNAME, ID, PW);
+        RegisterRequest registerRequest = new RegisterRequest(NICKNAME, ID, PW,Name , EMAIL);
         retrofitClient = RetrofitClient.getInstance();
         registerAPI = RetrofitClient.getRegisterAPI();
         registerAPI.getRegisterResponse(registerRequest).enqueue(new Callback<RegisterResponse>() {
@@ -141,11 +143,7 @@ public class Studentjoin extends AppCompatActivity {
             public void onResponse(Call<RegisterResponse> call, Response<RegisterResponse> response) {
                 Log.d("retrofit11", String.valueOf(response));
                 if (response.isSuccessful() || response.body() != null) {
-                    RegisterResponse result = response.body();
                     //받은 코드 저장
-                    Boolean resultcode = result.getSuc();
-
-
                     Toast.makeText(getApplicationContext(), "가입완료!!", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(Studentjoin.this, MainActivity.class);
 
@@ -159,6 +157,7 @@ public class Studentjoin extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<RegisterResponse> call, Throwable t) {
+                Log.d("====", t.getMessage());
                 AlertDialog.Builder builder = new AlertDialog.Builder(Studentjoin.this);
                 builder.setTitle("알림").setMessage("통신오류").setPositiveButton("확인", null).create().show();
                 AlertDialog alertDialog = builder.create();

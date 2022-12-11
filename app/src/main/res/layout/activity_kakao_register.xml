@@ -27,6 +27,7 @@
             android:layout_marginLeft="140dp"
             android:layout_marginTop="25dp"
             android:text="회원가입"
+            android:fontFamily="@font/pyeong"
             android:textColor="#000000"
             android:textStyle="bold" />
 
@@ -62,8 +63,10 @@
                     android:layout_width="82dp"
                     android:layout_height="23dp"
                     android:text="학교찾기"
+                    android:fontFamily="@font/pyeong"
                     android:textSize="20dp"
                     android:textStyle="bold"
+
                     android:textColor="#000000"
                     android:layout_marginLeft="11dp"
                     android:layout_marginTop="12dp"/>
@@ -97,6 +100,7 @@
 
 
                 <TextView
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="82dp"
                     android:layout_height="23dp"
                     android:text="정보입력"
@@ -108,6 +112,7 @@
                     android:layout_marginLeft="11dp"/>
 
                 <TextView
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
@@ -115,6 +120,7 @@
                     android:layout_marginLeft="11dp"/>
 
                 <TextView
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="46dp"
                     android:layout_height="wrap_content"
                     android:text="이름"
@@ -135,6 +141,7 @@
 
 
                 <TextView
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="46dp"
                     android:layout_height="wrap_content"
                     android:text="닉네임"
@@ -195,12 +202,14 @@
                         android:id="@+id/checkbox"/>
 
                     <TextView
+                        android:fontFamily="@font/pyeong"
                         android:layout_width="wrap_content"
                         android:layout_marginLeft="9dp"
                         android:layout_height="wrap_content"
                         android:text="[필수] 이용자약관 및 개인정보수집동의"
                         android:textSize="15dp"/>
                     <TextView
+                        android:fontFamily="@font/pyeong"
                         android:id="@+id/tv_agree"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -216,6 +225,7 @@
                     android:orientation="vertical">
 
                     <Button
+                        android:fontFamily="@font/pyeong"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="가입완료"

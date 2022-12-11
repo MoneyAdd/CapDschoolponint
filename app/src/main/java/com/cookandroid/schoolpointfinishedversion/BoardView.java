@@ -35,7 +35,7 @@ public class BoardView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_board_view);
 
-        tv_view = findViewById(R.id.tv_boardview_view);
+        tv_view = findViewById(R.id.tv_boardview_repose);
         floatingActionButton = findViewById(R.id.floating_boardpage_view);
 
 

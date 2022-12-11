@@ -22,6 +22,7 @@
             android:src="@drawable/back" />
 
         <TextView
+            android:fontFamily="@font/pyeong"
             android:layout_width="65dp"
             android:layout_height="21dp"
             android:layout_marginLeft="140dp"
@@ -61,6 +62,7 @@
                     android:layout_marginLeft="15dp"/>
 
                 <TextView
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="82dp"
                     android:layout_height="23dp"
                     android:text="학교찾기"
@@ -84,6 +86,7 @@
                         android:hint="학교찾기"/>
 
                     <Button
+                        android:fontFamily="@font/pyeong"
                         android:id="@+id/btn_findschool"
                         android:layout_width="50dp"
                         android:layout_height="30dp"
@@ -99,6 +102,7 @@
 
 
                 <TextView
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="82dp"
                     android:layout_height="23dp"
                     android:text="정보입력"
@@ -110,6 +114,7 @@
                     android:layout_marginLeft="11dp"/>
 
                 <TextView
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
@@ -117,6 +122,7 @@
                     android:layout_marginLeft="11dp"/>
 
                 <TextView
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="46dp"
                     android:layout_height="wrap_content"
                     android:text="이름"
@@ -137,6 +143,7 @@
 
 
                 <TextView
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="46dp"
                     android:layout_height="wrap_content"
                     android:text="닉네임"
@@ -156,6 +163,7 @@
 
 
                 <TextView
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="46dp"
                     android:layout_height="wrap_content"
                     android:text="아이디"
@@ -176,6 +184,7 @@
 
 
                 <TextView
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="비밀번호"
@@ -204,6 +213,7 @@
 
 
                 <TextView
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="25dp"
@@ -214,9 +224,10 @@
                     android:textColor="#000000"/>
 
                 <Button
+                    android:fontFamily="@font/pyeong"
                     android:layout_width="122dp"
                     android:layout_height="30dp"
-                    android:text="휴대폰 인증"
+                    android:text="이메일 인증"
                     android:textColor="#ffffff"
                     android:layout_marginLeft="14dp"
                     android:layout_marginTop="13dp"
@@ -239,6 +250,7 @@
                     android:orientation="vertical">
 
                     <Button
+                        android:fontFamily="@font/pyeong"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="가입완료"

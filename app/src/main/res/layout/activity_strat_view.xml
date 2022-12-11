@@ -19,6 +19,7 @@
 
 
     <Button
+        android:fontFamily="@font/pyeong"
         android:layout_width="300dp"
         android:layout_height="52dp"
         android:text="로그인"
@@ -30,6 +31,7 @@
         android:id="@+id/start_rogin_btn"/>
 
     <Button
+        android:fontFamily="@font/pyeong"
         android:layout_width="300dp"
         android:layout_height="52dp"
         android:text="회원가입"

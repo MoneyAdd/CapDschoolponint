@@ -23,6 +23,7 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:fontFamily="@font/pyeong"
                 android:id="@+id/tv_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -100,6 +101,7 @@
 
 
                     <TextView
+                        android:fontFamily="@font/pyeong"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="19dp"
@@ -133,6 +135,7 @@
                         android:src="@drawable/check"/>
 
                     <TextView
+                        android:fontFamily="@font/pyeong"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="오늘의 할일"
@@ -237,6 +240,7 @@
                         android:src="@drawable/table"/>
 
                     <TextView
+                        android:fontFamily="@font/pyeong"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="수업"
@@ -253,6 +257,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:fontFamily="@font/pyeong"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1교시"
@@ -262,6 +267,7 @@
                         android:paddingVertical="10dp"/>
 
                     <TextView
+                        android:fontFamily="@font/pyeong"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="2교시"
@@ -271,6 +277,7 @@
                         android:paddingVertical="10dp"/>
 
                     <TextView
+                        android:fontFamily="@font/pyeong"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="3교시"
@@ -287,6 +294,7 @@
                     android:orientation="horizontal">
 
                     <TextView
+                        android:fontFamily="@font/pyeong"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="수학"
@@ -296,6 +304,7 @@
                         android:layout_marginStart="21dp"/>
 
                     <TextView
+                        android:fontFamily="@font/pyeong"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="영어"
@@ -305,6 +314,7 @@
                         android:layout_marginStart="42dp"/>
 
                     <TextView
+                        android:fontFamily="@font/pyeong"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="체육"
@@ -331,21 +341,23 @@
                    android:orientation="horizontal">
 
                    <TextView
+                       android:fontFamily="@font/pyeong"
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
-                       android:text="게시판"
+                       android:text="자유게시판"
                        android:textColor="#000000"
                        android:textStyle="bold"
                        android:layout_marginStart="6dp"
                        android:paddingVertical="5dp"/>
 
                    <TextView
+                       android:fontFamily="@font/pyeong"
                        android:id="@+id/tv_mainpage_Viewmore"
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
                        android:text="더보기"
                        android:textStyle="bold"
-                      android:paddingStart="260dp"
+                      android:paddingStart="245dp"
                        android:paddingVertical="5dp"/>
 
                    <ImageView
@@ -370,20 +382,9 @@
                         android:paddingVertical="10dp"
                         android:paddingHorizontal="10dp"
                         android:textSize="20sp"
-                        android:textStyle="bold"
+                        android:textStyle="bold" />
 
-                      />
 
-                    <TextView
-                        android:id="@+id/tv_mainpage_boardtitle1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingVertical="10dp"
-                        android:paddingHorizontal="10dp"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:text="맛점하세요"
-                       />
 
 
 

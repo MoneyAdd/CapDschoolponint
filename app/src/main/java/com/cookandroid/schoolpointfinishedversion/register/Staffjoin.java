@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.cookandroid.schoolpointfinishedversion.Emailanuta;
 import com.cookandroid.schoolpointfinishedversion.MainActivity;
 import com.cookandroid.schoolpointfinishedversion.R;
 import com.cookandroid.schoolpointfinishedversion.RegisterRequest;
@@ -24,18 +25,29 @@ import com.cookandroid.schoolpointfinishedversion.RegisterResponse;
 import com.cookandroid.schoolpointfinishedversion.RetrofitClient;
 import com.cookandroid.schoolpointfinishedversion.api.RegisterAPI;
 
+import java.io.IOException;
+
+import kotlin.jvm.internal.PropertyReference0Impl;
+import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Staffjoin extends AppCompatActivity {
 
     private RetrofitClient retrofitClient;
     private RegisterAPI registerAPI;
-
+   private Emailanuta emailanuta;
     private ImageView back;
     private TextView tv_agre;
 
+    private Button btn_phoncertification;
+    private EditText et_email_authentication;
+    private EditText email_num;
+    private Button Btn_confirmation;
+    private String baseUrl = "http://120.142.105.189:12321";
 
 
     private Button btn_registersave;
@@ -58,6 +70,9 @@ public class Staffjoin extends AppCompatActivity {
         back = findViewById(R.id.img_back);
         tv_agre = findViewById(R.id.tv_agree);
 
+        btn_phoncertification = findViewById(R.id.btn_phoncertification);
+        et_email_authentication = findViewById(R.id.edt_email_authentication);
+        email_num = findViewById(R.id.edt_email_num);
 
 
 
@@ -67,6 +82,67 @@ public class Staffjoin extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Staffjoin.this, SignUp.class);
                 startActivity(intent);
+            }
+        });
+
+        btn_phoncertification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String Email = et_email_authentication.getText().toString();
+                String EmainNum = email_num.getText().toString();
+
+
+                //레트로핏 생성
+                Retrofit retrofit = new Retrofit.Builder().baseUrl(baseUrl).addConverterFactory(GsonConverterFactory.create()).build();
+                Emailanuta emailanutaapi = retrofit.create(Emailanuta.class);
+                Call<ResponseBody> call = emailanutaapi.getEmail(Email);
+                call.enqueue(new Callback<ResponseBody>() {
+                    @Override
+                    public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+
+
+                        if(response.isSuccessful()){
+
+
+                            try {
+                                Toast.makeText(getApplicationContext(), "통신성공", Toast.LENGTH_LONG).show();
+                                String result = response.body().string();
+                                Log.e("BBB789", response.body().string());
+
+                                Btn_confirmation = findViewById(R.id.btn_confirmation);
+                                Btn_confirmation.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+                                        Log.d("bibi",Email);
+                                        Log.e("baba", result);
+
+                                        if(EmainNum.equals(result)){
+
+                                            Toast.makeText(getApplicationContext(),"일치합니다.", Toast.LENGTH_LONG).show();
+                                        }else {
+                                            Toast.makeText(getApplicationContext(),"불일치합니다.", Toast.LENGTH_LONG).show();
+                                        }
+                                    }
+                                });
+
+
+                            }catch (IOException e){
+                                e.printStackTrace();
+                            }
+
+
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+                        Log.d("emailfailure", t.getMessage());
+                        Toast.makeText(getApplicationContext(), "통신실패", Toast.LENGTH_LONG).show();
+                    }
+                });
+
             }
         });
 
@@ -121,7 +197,8 @@ public class Staffjoin extends AppCompatActivity {
         String PWS = edt_paswwords.getText().toString();
         String NAME  = username.getText().toString();
         String NICKNAME = edt_nickname.getText().toString();
-        String EMAIL = "tjdwns0158@naver.com";
+        String EMAIL = et_email_authentication.getText().toString();
+
 
         RegisterRequest registerRequest = new RegisterRequest(NICKNAME, ID, PW, NAME, EMAIL);
         retrofitClient = RetrofitClient.getInstance();

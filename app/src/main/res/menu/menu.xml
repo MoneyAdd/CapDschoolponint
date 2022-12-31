@@ -12,7 +12,7 @@
       android:icon="@drawable/schedul"/>
 
    <item
-       android:id="@+id/runch"
+       android:id="@+id/lunch"
        android:title=""
        android:icon="@drawable/runch"
        app:labelVisibilityMode="unlabeled"

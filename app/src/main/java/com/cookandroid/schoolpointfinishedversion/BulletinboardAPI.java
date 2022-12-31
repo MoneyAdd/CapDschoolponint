@@ -10,8 +10,8 @@ import retrofit2.http.Query;
 
 public interface BulletinboardAPI {
 
-    @GET("board/viewBoard/공지사항/1/1")
-//    Call<BulletinboardinRes> getBullet(@Query("board_id") Integer board_id, @Query("school_id") Integer school_id, @Query("page") Integer page);
-    Call<ResponseBody> getBullet(@Query("board_id") Integer board_id, @Query("school_id") Integer school_id, @Query("page") Integer page);
+    @GET("board/viewBoard")
+//    Call<BulletinboardinRes> getBullet(@Query("board_id") String board_id, @Query("school_id") Integer school_id, @Query("page") Integer page);
+    Call<ResponseBody> getBullet(@Query("board_type") String board_type, @Query("school_id") Integer school_id, @Query("page") Integer page);
 
 }

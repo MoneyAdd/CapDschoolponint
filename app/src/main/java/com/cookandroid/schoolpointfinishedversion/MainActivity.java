@@ -71,6 +71,15 @@ public class MainActivity extends AppCompatActivity {
         userid.setFilters(new InputFilter[]{filterAlphaNum});
         userpw.setFilters(new InputFilter[]{filterAlphaNum});
 
+        idpwfind.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ViewFliper.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -22,7 +22,6 @@
             android:src="@drawable/back" />
 
         <TextView
-            android:fontFamily="@font/pyeong"
             android:layout_width="65dp"
             android:layout_height="21dp"
             android:layout_marginLeft="140dp"
@@ -86,7 +85,6 @@
                         android:hint="학교찾기"/>
 
                     <Button
-                        android:fontFamily="@font/pyeong"
                         android:id="@+id/btn_findschool"
                         android:layout_width="50dp"
                         android:layout_height="30dp"
@@ -110,7 +108,7 @@
                     android:gravity="center"
                     android:textStyle="bold"
                     android:textColor="#000000"
-                    android:layout_marginTop="34dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="11dp"/>
 
                 <TextView
@@ -129,14 +127,15 @@
                     android:textColor="#000000"
                     android:textStyle="bold"
                     android:textSize="15dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="15dp"/>
 
                 <EditText
+
                     android:id="@+id/edt_username"
                     android:layout_width="340dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="14dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginLeft="15dp"
                     android:hint="이름 입력."/>
 
@@ -150,14 +149,14 @@
                     android:textColor="#000000"
                     android:textStyle="bold"
                     android:textSize="15dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="15dp"/>
 
                 <EditText
                     android:id="@+id/edt_usernickname"
                     android:layout_width="340dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="14dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginLeft="15dp"
                     android:hint="닉네임 입력."/>
 
@@ -170,14 +169,14 @@
                     android:textColor="#000000"
                     android:textStyle="bold"
                     android:textSize="15dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="15dp"/>
 
                 <EditText
                     android:id="@+id/edt_userid"
                     android:layout_width="340dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="14dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginLeft="15dp"
                     android:hint="아이디 입력."/>
 
@@ -191,14 +190,14 @@
                     android:textColor="#000000"
                     android:textStyle="bold"
                     android:textSize="15dp"
-                    android:layout_marginTop="25dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="15dp"/>
 
                 <EditText
                     android:id="@+id/edt_userpw"
                     android:layout_width="340dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="14dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginLeft="15dp"
                     android:hint="비밀번호 입력."/>
 
@@ -206,7 +205,7 @@
                     android:id="@+id/edt_userpww"
                     android:layout_width="340dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="14dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginLeft="15dp"
                     android:hint="비밀번호 확인."/>
 
@@ -219,20 +218,38 @@
                     android:textSize="25dp"
                     android:text="본인 인증"
                     android:textStyle="bold"
-                    android:layout_marginTop="34dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginLeft="14dp"
                     android:textColor="#000000"/>
 
-                <Button
-                    android:fontFamily="@font/pyeong"
-                    android:layout_width="122dp"
-                    android:layout_height="30dp"
-                    android:text="이메일 인증"
-                    android:textColor="#ffffff"
-                    android:layout_marginLeft="14dp"
-                    android:layout_marginTop="13dp"
-                    android:background="@drawable/findschoolbtn"
-                    android:id="@+id/btn_phoncertification"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:fontFamily="@font/pyeong"
+                        android:layout_width="122dp"
+                        android:layout_height="30dp"
+                        android:text="이메일 인증"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/findschoolbtn"
+                        android:id="@+id/btn_phoncertification"/>
+
+                    <Button
+                        android:fontFamily="@font/pyeong"
+                        android:layout_width="122dp"
+                        android:layout_height="30dp"
+                        android:text="이메일 인증 확인"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="13dp"
+                        android:background="@drawable/findschoolbtn"
+                        android:id="@+id/btn_confirmation"/>
+                </LinearLayout>
+
 
 
                 <ImageView
@@ -241,6 +258,7 @@
                     android:src="@drawable/bottomline"
                     android:layout_marginTop="23dp"
                     android:layout_marginLeft="14dp"/>
+
 
 
 
@@ -258,9 +276,6 @@
                         android:id="@+id/registersave"/>
 
                 </LinearLayout>
-
-
-
 
             </LinearLayout>
 

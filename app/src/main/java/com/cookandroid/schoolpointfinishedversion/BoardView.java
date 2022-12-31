@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,10 +40,11 @@ public class BoardView extends AppCompatActivity {
         floatingActionButton = findViewById(R.id.floating_boardpage_view);
 
 
+
         //레트로핏 생성
         Retrofit retrofit = new Retrofit.Builder().baseUrl(baseUrl).addConverterFactory(GsonConverterFactory.create()).build();
         BulletinboardAPI API = retrofit.create(BulletinboardAPI.class);
-        Call<ResponseBody> call = API.getBullet(null, 1,1);
+        Call<ResponseBody> call = API.getBullet("일반", 1,1);
         call.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
@@ -52,7 +54,7 @@ public class BoardView extends AppCompatActivity {
                     try {
                         String result = response.body().string();
                         Log.e("BBB", response.body().string());
-                        tv_view.setText(result);
+                        tv_view.setText(result + "\n");
                     }catch (IOException e){
                         e.printStackTrace();
                     }
@@ -61,6 +63,7 @@ public class BoardView extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<ResponseBody> call, Throwable t) {
+                      Toast.makeText(getApplicationContext(), "통신실패", Toast.LENGTH_LONG).show();
 
             }
         });

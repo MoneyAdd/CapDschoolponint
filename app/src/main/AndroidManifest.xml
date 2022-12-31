@@ -18,6 +18,18 @@
         android:theme="@style/Theme.SchoolPointfinishedversion"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ViewFliper2"
+            android:exported="false" />
+        <activity
+            android:name=".ViewFliper"
+            android:exported="false" />
+        <activity
+            android:name=".Popularpostsoftheday"
+            android:exported="false" />
+        <activity
+            android:name=".ChatRome"
+            android:exported="false" />
+        <activity
             android:name=".BoardView"
             android:exported="false" />
         <activity
